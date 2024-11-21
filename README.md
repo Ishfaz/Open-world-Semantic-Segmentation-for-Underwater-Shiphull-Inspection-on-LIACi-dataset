@@ -1,3 +1,39 @@
+# Open-world Semantic Segmentation for Underwater Shiphull Inspection
+
+This project implements an open-world semantic segmentation framework for underwater ship hull inspection, adapting the approach from recent advances in autonomous driving to address the unique challenges of underwater imagery analysis.
+
+## Overview
+
+The system utilizes a dual-decoder architecture to perform both traditional semantic segmentation and novel defect detection on underwater ship hull imagery. The implementation achieves a mean IoU of 50.9% across 11 classes while maintaining the ability to identify unknown anomalies.
+
+### Key Features
+
+- Dual-decoder architecture with ResNet34 backbone
+- Open-world semantic segmentation capabilities
+- Specialized loss functions for underwater imagery 
+- Support for both known defect detection and novel anomaly identification
+- Comprehensive feature space organization through contrastive learning
+
+## Dataset
+
+The project uses the LIACI dataset from SINTEF Ocean, which includes:
+- 1893 annotated images
+- 11 semantic classes 
+- Diverse underwater conditions and defect types
+
+### Classes
+1. Void (background)
+2. Ship hull
+3. Marine growth
+4. Anode
+5. Overboard valve
+6. Propeller
+7. Paint peel
+8. Bilge keel
+9. Defect
+10. Corrosion
+11. Sea chest grating
+
 ## Requirements
 
 
